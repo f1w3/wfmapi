@@ -1,0 +1,41 @@
+{
+    "name": "wfmapi",
+    "version": "0.0.1",
+    "types": "./dist/types/index.d.ts",
+    "main": "./dist/cjs/index.min.js",
+    "module": "./dist/index.min.js",
+    "exports": {
+        ".": {
+            "types": "./dist/types/index.d.ts",
+            "import": "./dist/index.min.js",
+            "require": "./dist/cjs/index.min.js"
+        },
+        "./api/v2": {
+            "types": "./dist/types/api/v2/index.d.ts",
+            "import": "./dist/api/v2/index.min.js",
+            "require": "./dist/api/v2/cjs/index.min.js"
+        },
+        "./api": {
+            "types": "./dist/types/api/v2/index.d.ts",
+            "import": "./dist/api/v2/index.min.js",
+            "require": "./dist/api/v2/cjs/index.min.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "bun run scripts/build.ts",
+        "clean": "bun run scripts/clean.ts",
+        "check": "bunx biome check --write"
+    },
+    "devDependencies": {
+        "@biomejs/biome": "2.4.8",
+        "@types/bun": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    },
+    "license": "MIT",
+    "type": "module"
+}

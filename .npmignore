@@ -1,0 +1,8 @@
+example/
+node_modules/
+src/
+biome.json
+bun.lockb
+README.md
+tsconfig.json
+scripts/
