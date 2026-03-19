@@ -9,7 +9,7 @@ Endpoints are defined with types, allowing you to handle path params, query, and
 npm install wfmapi
 ```
 
-[!NOTE]
+> [!NOTE]
 A runtime environment with fetch support is assumed.
 If globalThis.fetch is not available, pass your own fetch implementation to the Client.
 
